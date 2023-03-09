@@ -1,0 +1,82 @@
+
+*{
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    background-color: #5ba5db87;
+    font-family: "Red Hat Display", sans-serif;
+  }
+  .calculator {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    border-radius: 15px;
+    overflow: hidden;
+  }
+  .screen {
+    height: 150px;
+    background: #001e34;
+    margin: 20px 20px 20px 20px;
+    margin: auto;
+  }
+  
+  .screenContent {
+    text-align: end;
+    padding: 17px;
+    font-size: 30px;
+    user-select: none;
+  }
+  
+  .calculation {
+    font-size: 20px;
+    color: white;
+    overflow: auto;
+    padding-top: 2rem;
+  }
+  
+  .result {
+    font-size: 2.5rem;
+    padding-top: 1rem;
+    color: #fff;
+  }
+  table {
+    background-color: #001e34;
+    border-collapse: collapse;
+  }
+  
+  tr,
+  td {
+    border: 0.2px solid black;
+    border-collapse: collapse;
+  }
+  
+  #block0,#block1,#block2,#block3,
+  #block4,#block5,#block6,#block7,
+  #block8,#block9,#clr,#back,#plus,#minus,#divide
+  ,#multiply,#ans,#dot {
+    width: 50px;
+    height: 50px;
+    font-size: 17px;
+    cursor: pointer;
+    border: none;
+    background: #002b4a;
+    color: white;
+    outline: none;
+  }
+  
+  #clr,#back,#ans,#dot {
+    color: #26b821;
+    font-family: "Fira Sans", sans-serif;
+  }
+  
+  #plus,#divide,#minus,#multiply {
+    color: #9a80e4;
+    font-family: "Fira Sans", sans-serif;
+  }
+  button:hover {
+    background-color: #ffa800;
+    color: #fff;
+    transition: all 0.5s linear;
+  }
